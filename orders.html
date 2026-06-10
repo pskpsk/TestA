@@ -1,0 +1,7 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Orders</title>
+<link rel="stylesheet" href="css/style.css"></head><body>
+<header><h1>Orders</h1></header><div class="container" id="orders"></div>
+<script src="js/storage.js"></script><script>
+const orders=getOrders(); const el=document.getElementById('orders');
+orders.forEach(o=>el.innerHTML+=`<div class="card"><h3>Order #${o.id}</h3><p>Total ₹${o.total}</p><p>${o.status}</p></div>`);
+</script></body></html>
